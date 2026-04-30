@@ -152,7 +152,6 @@ while rounds_played < num_rounds:
 
     # Choose a 'secret' number between the low and high number
     secret = random.randint(low_num, high_num)
-    print("Spoiler Alert", secret)    # REMOVE THIS LINE AFTER TESTING!
 
     guess = ""
     while guess != secret and guesses_used < guesses_allowed:
@@ -232,6 +231,8 @@ while rounds_played < num_rounds:
         num_rounds += 1
 
 # Game ends here
+
+print("=== Game Over! ===")
 
 # check users have played at least one round
 # before calculating statistics
